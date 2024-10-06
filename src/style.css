@@ -7,6 +7,7 @@
   outline: none;
   border: none;
   text-decoration: none;
+  font-family: "Lato", system-ui;
 }
 
 html,
@@ -138,6 +139,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Lato", system-ui;
+  src: url(./../fonts/Lato-Thin.ttf) url(./../fonts/Lato-Light.ttf) url(./../fonts/Lato-Regular.ttf) url(./../fonts/Lato-Bold.ttf) url(./../fonts/Lato-Black.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */
