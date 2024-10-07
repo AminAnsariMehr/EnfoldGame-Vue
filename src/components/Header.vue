@@ -2,7 +2,7 @@
     <header class="header">
         <div class="logoWrapper">
             <a href="#" class="logoLink">
-                <img src="./../../src/assets/decorations/logo.png" class="logoImage" alt="logoImage">
+                <img src="@decorations/logo.png" class="logoImage" alt="logoImage">
             </a>
         </div>
 
@@ -32,8 +32,8 @@
 </template>
 
 <style lang="scss" scoped>
-@import './../assets/scss/variables';
-@import './../assets/scss/mixins';
+@import '@assets/scss/variables';
+@import '@assets/scss/mixins';
 
 .header {
     padding: 0 30px;

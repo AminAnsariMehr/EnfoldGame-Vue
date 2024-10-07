@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <header-component></header-component>
+        <banner-component></banner-component>
     </div>
 </template>
 
@@ -21,10 +22,12 @@
 </style>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+import Banner from './components/Banner.vue';
 export default {
     components: {
         "header-component": Header,
+        "banner-component": Banner,
     }
 }
 </script>
