@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header" :class="{ fixedHeader: currentScroll > 70 }">
         <div class="logoWrapper">
             <a href="#" class="logoLink">
                 <img src="@decorations/logo.png" class="logoImage" alt="logoImage">
@@ -70,7 +70,7 @@
             .menuItems {
                 flex: 1;
                 height: 100%;
-                border-left: 0.8px solid rgb(43, 43, 43);
+
 
                 .menuLinks {
                     color: #fff;
@@ -89,11 +89,36 @@
         }
     }
 }
+
+.fixedHeader {
+    background: $primary-bg-clr;
+    border-bottom: none;
+
+    .navigationMenu {
+        .Menu {
+            .menuItems {
+                border-left: 0.8px solid rgb(43, 43, 43);
+            }
+        }
+    }
+
+}
 </style>
 
 
 <script>
 export default {
+    data() {
+        return {
+            currentScroll: 0,
+        }
+    },
+    mounted() {
+        window.addEventListener("scroll", () => {
+            this.currentScroll = window.scrollY;
+            // console.log(this.currentScroll)
+        })
+    }
 
 }
 </script>

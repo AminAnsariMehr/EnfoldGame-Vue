@@ -17,7 +17,6 @@
     justify-content: flex-start;
     align-items: center;
     background: $primary-bg-clr;
-
 }
 </style>
 
